@@ -1,7 +1,7 @@
 package session
 
 import (
-	fb "github.com/A-M-Simmons/FacebookScrape/FacebookInterface"
+	fb "github.com/A-M-Simmons/FacebookScrape/FaceBookInterface"
 )
 
 // Session ...

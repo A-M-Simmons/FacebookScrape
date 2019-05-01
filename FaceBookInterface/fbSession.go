@@ -1,7 +1,7 @@
 package fb
 
 import (
-	database "github.com/A-M-Simmons/FacebookScrape/FacebookInterface/Database"
+	database "github.com/A-M-Simmons/FacebookScrape/FaceBookInterface/Database"
 	"github.com/headzoo/surf/browser"
 )
 
