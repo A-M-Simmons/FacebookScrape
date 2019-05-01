@@ -1,0 +1,48 @@
+Photos
+  ID INT AUTO_INCREMENT PRIMARY KEY
+  URL VARCHAR(2000)
+  UploaderID INT 
+  Uploaded DATE
+  Description VARCHAR(8000)
+  CommentThreadsID INT
+  ReactionsID INT
+  Type VARCHAR(20)
+
+CommentThreads
+  ID INT AUTO_INCREMENT PRIMARY KEY
+
+CommentThread
+  ID INT AUTO_INCREMENT PRIMARY KEY
+  CommentThreadID INT
+  Position INT
+
+Comment
+  ID INT AUTO_INCREMENT PRIMARY KEY
+  CommentThreadID INT
+  Position INT 
+  UploaderID INT
+  Uploaded DATE
+  Message VARCHAR(8000)
+  ReactionsID INT
+
+Post
+  ID INT AUTO_INCREMENT PRIMARY KEY
+  URL VARCHAR(2000)
+  UploaderID INT
+  Uploaded DATE
+  Message VARCHAR(8000)
+  CommentThreadsID INT
+  ReactionsID INT
+
+Reaction
+  ID INT
+  ReactionsID INT
+  UplaoderID INT
+  ReactionType 
+
+CommentThreads
+  Has multiple CommentThread 
+    Has multiple Comment
+
+CommentThread is comprised of Comments which are found by the CommentThreadID and Position
+CommentThreads ... ditto
